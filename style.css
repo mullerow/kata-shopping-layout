@@ -12,4 +12,9 @@ main {
 article {
   border: 2px solid black;
   width: 30%;
+  padding-left: 10px;
+}
+
+button {
+  border-radius: 3px;
 }
