@@ -1,10 +1,19 @@
 /* quicksand-regular - latin */
 @font-face {
-  font-display: swap;
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
   font-family: "Quicksand";
   font-style: normal;
   font-weight: 400;
   src: url("../fonts/quicksand-v31-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* quicksand-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Quicksand";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/quicksand-v31-latin-700.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
 *,
@@ -23,8 +32,26 @@ main {
 }
 
 article {
-  border: 2px solid black;
+  border-radius: 15px;
   width: 30%;
+  border: 1px solid black;
+  color: grey;
+}
+
+section {
+  display: grid;
+  justify-content: center;
+}
+
+h2 {
+  padding-left: 15px;
+  margin-top: 0;
+  color: black;
+  font-size: 20px;
+}
+
+p {
+  padding-left: 10px;
 }
 
 .image-container-asics {
@@ -35,6 +62,7 @@ article {
   background-size: contain;
   background-repeat: no-repeat;
   background-blend-mode: overlay;
+  border-radius: 15px;
 }
 
 .image-container-adidas {
@@ -45,6 +73,7 @@ article {
   background-size: contain;
   background-repeat: no-repeat;
   background-blend-mode: overlay;
+  border-radius: 15px;
 }
 
 .image-container-new-balance {
@@ -55,33 +84,30 @@ article {
   background-size: contain;
   background-repeat: no-repeat;
   background-blend-mode: overlay;
-}
-
-section {
-  display: grid;
-  justify-content: center;
-}
-
-h2 {
-  padding-left: 10px;
-}
-
-p {
-  padding-left: 10px;
+  border-radius: 15px;
 }
 
 .price {
-  width: 90%;
-  margin-left: auto;
-  margin-right: auto;
   border: 2px solid black;
   grid-area: price;
 }
 
-.color-checkbox {
-  grid-area: color-checkbox;
+.color-radio-box {
+  grid-area: color-radio-box;
 }
 
 .dropdown-size {
   grid-area: dropdown-size;
+}
+
+.dropdown-quantity {
+  grid-area: dropdown-quantity;
+}
+
+.chart-button {
+  grid-area: dropdown-quantity;
+}
+
+.order-form {
+  border: 2px solid black;
 }
