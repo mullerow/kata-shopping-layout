@@ -87,6 +87,17 @@ p {
   border-radius: 15px;
 }
 
+.order-form {
+  border: 2px solid black;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+    "price price"
+    "dropdown-size dropdown-quantity"
+    "color-radio-box ."
+    "chart-button chart-button";
+}
+
 .price {
   border: 2px solid black;
   grid-area: price;
@@ -105,9 +116,5 @@ p {
 }
 
 .chart-button {
-  grid-area: dropdown-quantity;
-}
-
-.order-form {
-  border: 2px solid black;
+  grid-area: chart-button;
 }
