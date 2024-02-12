@@ -63,6 +63,7 @@ p {
   background-repeat: no-repeat;
   background-blend-mode: overlay;
   border-radius: 15px;
+  position: relative;
 }
 
 .image-container-adidas {
@@ -85,6 +86,7 @@ p {
   background-repeat: no-repeat;
   background-blend-mode: overlay;
   border-radius: 15px;
+  position: relative;
 }
 
 .order-form {
@@ -95,14 +97,13 @@ p {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-areas:
-    "price price"
-    "dropdown-size dropdown-quantity"
-    "color-radio-box ."
-    "chart-button chart-button";
+    "price           price"
+    "dropdown-size   dropdown-quantity"
+    "color-radio-box color-radio-box"
+    "chart-button    chart-button";
 }
 
 .price {
-  border: 1px solid black;
   border-radius: 5px;
   background-color: white;
   font-weight: 700;
@@ -118,14 +119,17 @@ p {
 
 .color-radio-box {
   grid-area: color-radio-box;
+  margin-left: 15px;
 }
 
 .dropdown-size {
   grid-area: dropdown-size;
+  margin: 15px;
 }
 
 .dropdown-quantity {
   grid-area: dropdown-quantity;
+  margin: 15px;
 }
 
 .chart-button {
@@ -134,6 +138,30 @@ p {
   border-radius: 5px;
   border: none;
   grid-area: chart-button;
-  margin: 20px;
+  margin: 15px;
   height: 36px;
+}
+
+.asics-Badge {
+  color: black;
+  background-color: rgb(235, 232, 232);
+  opacity: 0.7;
+  font-size: 12px;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  padding: 2px 10px;
+  border-radius: 5px;
+}
+
+.new-balance-Badge {
+  color: black;
+  background-color: rgb(235, 232, 232);
+  opacity: 0.7;
+  font-size: 12px;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  padding: 2px 10px;
+  border-radius: 5px;
 }
