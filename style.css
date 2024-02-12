@@ -31,3 +31,11 @@ section {
   border: 2px solid black;
   grid-area: price;
 }
+
+.color-checkbox {
+  grid-area: color-checkbox;
+}
+
+.dropdown-size {
+  grid-area: dropdown-size;
+}
