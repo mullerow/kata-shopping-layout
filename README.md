@@ -1,4 +1,4 @@
-## KATA Shopping-site
+## KATA Shopping-Site
 
 This is my Try to rebuild a Layout of a given Shop-image. Only HTML and CSS used.
 
