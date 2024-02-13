@@ -65,7 +65,12 @@ select {
   border-radius: 5px;
   border: none;
   width: 4vw;
+  height: 1.8vw;
   margin: 10px 10px;
+}
+
+label {
+  font-size: 16px;
 }
 
 .image-container-asics {
@@ -115,7 +120,7 @@ select {
     "price           price"
     "dropdown-size   dropdown-quantity"
     "color-radio-box color-radio-box"
-    "chart-button    chart-button";
+    "cart-button     cart-button";
 }
 
 .price {
@@ -135,6 +140,7 @@ select {
 .color-radio-box {
   grid-area: color-radio-box;
   margin-left: 15px;
+  margin-bottom: 30px;
   position: relative;
 }
 
@@ -153,7 +159,7 @@ select {
   color: white;
   border-radius: 5px;
   border: none;
-  grid-area: chart-button;
+  grid-area: cart-button;
   margin: 30px 15px 15px 15px;
   height: 40px;
   font-size: 14px;
@@ -207,6 +213,62 @@ select {
   font-size: 10px;
   bottom: 30px;
   left: 10px;
+}
+
+label#asics-color,
+label#adidas-color,
+label#new-balance-color {
+  position: absolute;
+  top: 10px;
+  left: 0;
+}
+
+input#blue {
+  position: absolute;
+  top: 5px;
+  left: 40px;
+}
+
+input#red {
+  position: absolute;
+  top: 5px;
+  left: 80px;
+}
+
+input#black {
+  position: absolute;
+  top: 5px;
+  left: 120px;
+}
+
+input#green-black {
+  position: absolute;
+  top: 5px;
+  left: 40px;
+}
+
+input#red-black {
+  position: absolute;
+  top: 5px;
+  left: 80px;
+}
+
+input#blue-black {
+  position: absolute;
+  top: 5px;
+  left: 120px;
+}
+
+input#red-white {
+  position: absolute;
+  top: 5px;
+  left: 40px;
+}
+
+input#black-white {
+  position: absolute;
+  top: 5px;
+  left: 80px;
 }
 
 input#blue[type="radio"] {
