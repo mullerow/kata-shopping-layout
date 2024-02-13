@@ -45,15 +45,26 @@ section {
   justify-content: center;
 }
 
+header {
+  margin-top: 20px;
+}
+
 h2 {
-  padding-left: 15px;
-  margin-top: 0;
+  padding-left: 10px;
   color: black;
   font-size: 20px;
 }
 
 p {
   padding-left: 10px;
+}
+
+select {
+  background-color: white;
+  border-radius: 5px;
+  border: none;
+  width: 3vw;
+  margin: 10px 20px;
 }
 
 .image-container-asics {
@@ -94,6 +105,7 @@ p {
 
 .order-form {
   margin: 10px;
+  margin-top: 30px;
   background-color: #f5f5f5;
   border-radius: 15px;
   display: grid;
@@ -108,7 +120,7 @@ p {
 .price {
   border-radius: 5px;
   background-color: white;
-  font-weight: 700;
+  font-size: 20px;
   color: black;
   grid-area: price;
   width: 90%;
@@ -122,6 +134,7 @@ p {
 .color-radio-box {
   grid-area: color-radio-box;
   margin-left: 15px;
+  position: relative;
 }
 
 .dropdown-size {
@@ -149,7 +162,8 @@ p {
   color: black;
   background-color: rgb(235, 232, 232);
   opacity: 0.7;
-  font-size: 12px;
+  font-size: 11px;
+  font-weight: 700;
   position: absolute;
   right: 10px;
   top: 10px;
@@ -161,7 +175,8 @@ p {
   color: black;
   background-color: rgb(235, 232, 232);
   opacity: 0.7;
-  font-size: 12px;
+  font-size: 11px;
+  font-weight: 700;
   position: absolute;
   right: 10px;
   top: 10px;
@@ -191,4 +206,13 @@ p {
   font-size: 10px;
   bottom: 30px;
   left: 10px;
+}
+
+input[type="radio"] {
+  background-color: red;
+  border: 5px solid red;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  appearance: none;
 }
