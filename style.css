@@ -51,13 +51,13 @@ header {
 }
 
 h2 {
-  padding-left: 10px;
+  padding-left: 15px;
   color: black;
   font-size: 20px;
 }
 
 p {
-  padding-left: 10px;
+  padding-left: 15px;
 }
 
 select {
@@ -110,7 +110,7 @@ label {
 }
 
 .order-form {
-  margin: 10px;
+  margin: 15px;
   margin-top: 30px;
   background-color: #f5f5f5;
   border-radius: 15px;
@@ -146,12 +146,12 @@ label {
 
 .dropdown-size {
   grid-area: dropdown-size;
-  margin: 15px 0px 15px 15px;
+  margin: 10px 0px 10px 15px;
 }
 
 .dropdown-quantity {
   grid-area: dropdown-quantity;
-  margin: 15px 15px 15px 0px;
+  margin: 10px 15px 10px 0px;
 }
 
 .chart-button {
@@ -215,60 +215,61 @@ label {
   left: 10px;
 }
 
-label#asics-color,
-label#adidas-color,
-label#new-balance-color {
+.label-color {
   position: absolute;
   top: 10px;
-  left: 0;
+  left: 0px;
 }
 
 input#blue {
   position: absolute;
   top: 5px;
   left: 40px;
+  margin-left: 20px;
 }
 
 input#red {
   position: absolute;
   top: 5px;
-  left: 80px;
+  left: 100px;
 }
 
 input#black {
   position: absolute;
   top: 5px;
-  left: 120px;
+  left: 145px;
 }
 
 input#green-black {
   position: absolute;
   top: 5px;
   left: 40px;
+  margin-left: 20px;
 }
 
 input#red-black {
   position: absolute;
   top: 5px;
-  left: 80px;
+  left: 100px;
 }
 
 input#blue-black {
   position: absolute;
   top: 5px;
-  left: 120px;
+  left: 145px;
 }
 
 input#red-white {
   position: absolute;
   top: 5px;
   left: 40px;
+  margin-left: 20px;
 }
 
 input#black-white {
   position: absolute;
   top: 5px;
-  left: 80px;
+  left: 100px;
 }
 
 input#blue[type="radio"] {
