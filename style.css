@@ -37,6 +37,7 @@ article {
   border-radius: 15px;
   margin-top: 20px;
   width: 30%;
+  min-width: 350px;
   color: grey;
   box-shadow: 1px 1px 8px #cccccc;
 }
@@ -339,4 +340,16 @@ input#black-white[type="radio"] {
 input[type="radio"]:checked {
   outline: 2px dashed black;
   box-shadow: 0 0 0 2px cyan;
+}
+
+@media screen and (max-width: 1100px) {
+  main {
+    flex-wrap: wrap;
+  }
+
+  select {
+    background-color: white;
+    width: 50px;
+    height: 20px;
+  }
 }
